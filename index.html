@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barra de Reproducción</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">
+      <img src="./img/youtubemusic.png" alt="Logo YouTube Music">
+    </a>
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar canciones álbumes artistas o pódcasts">
+      <div class="actions">
+        <button><span class="material-icons">search</span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Barra de reproducción -->
+  <div class="player-bar">
+    <div class="song-info">
+      <img src="img/bunbury.jpg" alt="Portada" class="cover">
+      <div class="details">
+        <p class="title">Y al final...</p>
+        <p class="artist">Bunbury</p>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="control-btn">⏮</button>
+    <button id="play">▶️</button>
+      <button class="control-btn">⏭</button>
+    </div>
+    <div class="progress-container">
+      <span class="current-time">0:00</span>
+      <div class="progress-bar">
+        <div class="progress" style="width: 20%;"></div>
+      </div>
+      <span class="duration">4:22</span>
+    </div>
+    <div class="actions">
+      <button class="action-btn">👎</button>
+      <button class="action-btn">👍</button>
+      <button class="action-btn">⋮</button>
+    </div>
+  </div>
+
+  <!-- Reproductor de música -->
+  <div class="player">
+    <div class="imgBx">
+      <img src="img/bunbury.jpg" alt="Portada de la canción">
+    </div>
+    <audio controls>
+      <source src="Y al final....mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <script src="javascript.js"></script>
+
+</body>
+</html>
